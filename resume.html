@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="resume.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 15px 250px 15px 250px;
+        }
+        
+        .head {
+            background-color: rgb(80, 79, 79);
+            height: 290px;
+            /*width: 1750px;*/
+            position: relative;
+            /*overflow: hidden;*/
+        }
+        
+        img {
+            zoom: 120%;
+            border-radius: 50%;
+            border: 5px dotted yellow;
+            position: absolute;
+            transform: translate(155%, 25%);
+        }
+        
+        .bar1 {
+            background-color: azure;
+            height: 60px;
+            /* width: 1750px;*/
+        }
+        
+        .bar2 {
+            background-color: rgb(80, 79, 79);
+            height: 60px;
+            /*width: 1750px;*/
+        }
+        
+        .button {
+            /*margin: 0;*/
+            position: absolute;
+            top: 40%;
+            left: 33%;
+            /* -ms-transform: translateY(-50%);
+            transform: translateY(-50%);*/
+            color: rgb(46, 44, 44);
+            background-color: rgb(247, 168, 23);
+            font-size: 450%;
+            height: 90px;
+            /*width: 600px;*/
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 10px black;
+            text-align: center;
+            /*transform: translate(100%, -25%);*/
+        }
+        
+        .line1 {
+            height: 3px;
+            /* width: 1750px;*/
+            color: rgb(102, 99, 99);
+        }
+        
+        .bar3 {
+            height: 35px;
+            /*width: 1750px;*/
+            text-align: center;
+            background-color: white;
+            font-size: 140%;
+            /* border-bottom: 11cm black;*/
+        }
+        /*.row {
+            display: flex;
+        }
+        
+        .column {
+            flex: 50%;
+            margin: 5px 5px 5px 50px;
+            border-left: 2px grey;
+        }*/
+        
+        .column {
+            margin: 50px;
+            columns: 2;
+            column-gap: 40px;
+            column-rule-style: outset;
+            column-rule-width: 2px;
+            column-rule-color: grey;
+        }
+        
+        .fa fa-user {
+            border-radius: 50%;
+            border: dotted yellow;
+        }
+        
+        .fa fa-flask {
+            border-radius: 60%;
+            border: dotted yellow;
+        }
+        
+        .slider {
+            background-color: grey;
+        }
+        
+        input[type="range"] {
+            width: 40%;
+            height: 10px;
+            background: grey;
+            -webkit-appearance: none !important;
+        }
+        /*@media screen and (-webkit-min-device-pixel-ratio:0) {
+            input[type="range"] {
+                overflow: hidden;
+                -webkit-appearance: none;
+                background-color: grey;}
+        
+        input[type="range"]::-webkit-slider-runnable-track {
+            height: 13px;
+            -webkit-appearance: none;
+            color: orange;
+            margin-top: -1px;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none !important;
+            background: white;
+            border: 1px solid grey;
+            height: 13px;
+            width: 13px;
+            cursor: pointer;
+            border-radius: 100%;
+        }*/
+        /*Chrome*/
+        
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            input[type='range'] {
+                overflow: hidden;
+                height: 8px;
+                width: 250px;
+                -webkit-appearance: none;
+                background-color: rgb(211, 205, 205);
+                float: right;
+            }
+            input[type='range']::-webkit-slider-runnable-track {
+                height: 8px;
+                -webkit-appearance: none;
+                color: orange;
+                /*margin-top: -1px;*/
+            }
+            input[type='range']::-webkit-slider-thumb {
+                width: 8px;
+                -webkit-appearance: none;
+                height: 8px;
+                border-radius: 50%;
+                cursor: pointer;
+                align-items: center;
+                background: rgb(248, 245, 245);
+                border: 1px solid grey;
+                box-shadow: -250px 0 0 250px orange;
+            }
+        }
+        /** FF*/
+        
+        input[type="range"]::-moz-range-progress {
+            background-color: #d8a84f;
+        }
+        
+        input[type="range"]::-moz-range-track {
+            background-color: #adaca5;
+        }
+        /* IE*/
+        
+        input[type="range"]::-ms-fill-lower {
+            background-color: #d8a84f;
+        }
+        
+        input[type="range"]::-ms-fill-upper {
+            background-color: #adaca5;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="head">
+        <img src="https://i.pinimg.com/236x/42/1c/28/421c28b1f5dc578a4a54ebda8c046902.jpg">
+    </div>
+    <div class="bar1">
+        <div class="button">&emsp;NABHEETH&emsp;</div>
+    </div>
+    <div class="line1"></div>
+    <div class="bar2"></div>
+    <div class="line1"></div>
+    <div class="bar3">N.Damen Avenue, Chicago 99999 | 999-999-9999 | hello@kickresume.com | www.kickresume.com</div>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <div class="column">
+
+        <div style="color: grey; font-size:xx-large;">
+            <button style="height: 50px; width: 50px; color: orange; background-color:rgb(80,79,79); border-radius: 100%; border: dotted yellow;">
+                <i class="fa fa-user fa-2x" aria-hidden="true" ></i>
+            </button> Profile
+        </div>
+        <p style="font-size: large;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus expedita quis delectus assumenda, in natus incidunt? Praesentium, veniam! Impedit nam ipsam voluptas aspernatur consectetur quaerat. Alias nostrum natus quibusdam animi.</p>
+
+
+        <div style="color: grey; font-size:xx-large;">
+            <button style="height: 50px;width: 50px; color: orange; background-color:rgb(80,79,79); border-radius: 100%; border: dotted yellow;">
+                <i class="fa fa-flask fa-2x" aria-hidden="true"></i>
+            </button> Skills
+        </div>
+        <p style="text-align: center; font-size: large"><b>Technical Skills</b></p>
+        <label for="range" name="Java Script">Java Script</label><input type="range" min="1" max="10" value="8" style="align-items: flex-end;"></br>
+        <label for="range" name="CSS">CSS</label><input type="range" min="1" max="10" value="8" style="align-items: flex-end;"></br>
+        <label for="range" name="HTML">HTML</label><input type="range" min="1" max="10" value="6" style="align-items: flex-end;"></br>
+        <label for="range" name="React">React</label><input type="range" min="1" max="10" value="6" style="align-items: flex-end;"></br>
+        <label for="range" name="Redox">Redox</label><input type="range" min="1" max="10" value="8" style="align-items: flex-end;"></br>
+        <label for="range" name="Mongo">Mongo</label><input type="range" min="1" max="10" value="8" style="align-items: flex-end;"></br>
+        <label for="range" name="Deployment">Deployment</label><input type="range" min="1" max="10" value="10" style="align-items: flex-end;">
+
+
+        <p style="text-align: center; font-size: large"><b>Additional Skills</b></p>
+        <label for="range" name="Project Management">Project Management</label><input type="range" min="1" max="10" value="10" style="align-items: flex-end;"></br>
+        <label for="range" name="Recruitment">Recruitment</label><input type="range" min="1" max="10" value="8" style="align-items: flex-end;"></br>
+        <label for="range" name="Business Development">Business Development</label><input type="range" min="1" max="10" value="10" style="align-items: flex-end;"></br>
+        <label for="range" name="Editing">Editing</label><input type="range" min="1" max="10" value="8" style="align-items: flex-end;"></br>
+        <label for="range" name="Fundraising">Fundraising</label><input type="range" min="1" max="10" value="10" style="align-items: flex-end;"></br>
+        </br>
+
+
+        <div style="color: grey; font-size:xx-large;">
+            <button style="height: 50px; width: 50px; color: orange; background-color:rgb(80,79,79); border-radius: 100%; border: dotted yellow;">
+                <i class="fa fa-suitcase fa-2x" aria-hidden="true" ></i>
+            </button> Work experience
+        </div>
+        <p><b>Event Manager</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;03/2014 - 02/2017 C3 Presents, Washington DC</p>
+        <ul>
+            <li>Lead and execute all phases of event planning and production spanning committee recruitment, training, vendor relationships and on-site facilitation.</li>
+            <li>Brought new business to the organization through relentless networking and stewardship which helped the company win the bid for the State Department Summit on the Middle East and, the companies largest civic event to date, the United State
+                of Women. </li>
+            <li>Exercise fiscal control over budget creation, tracking and reporting. Collaborate with employees at all organizational levels to advance cohesive operations.</li>
+        </ul>
+
+
+
+
+        <div style="color: grey; font-size:xx-large;">
+            <button style="height: 50px; width: 50px; color: orange; background-color:rgb(80,79,79); border-radius: 100%; border: dotted yellow;">
+                <i class="fa fa-suitcase fa-2x" aria-hidden="true" ></i>
+            </button> Work experience
+        </div>
+        <p><b>Community Relations Manager</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;06/2011 - 01/2014 Gay & Lesbian Elder Housing, Los Angeles</p>
+        <ul>
+            <li>Arranging presentations and pitch deck.</li>
+            <li>Designing a PR plan and establishing important focus points.</li>
+            <li>Designing, creating and managing content across multiple communication platforms.</li>
+            <li>Building relationships with key media player.</li>
+        </ul>
+        </br>
+
+        <div style="color: grey; font-size:xx-large;">
+            <button style="height: 50px; width: 50px; color: orange; background-color:rgb(80,79,79); border-radius: 100%; border: dotted yellow;">
+                <i class="fa fa-graduation-cap fa-2x" aria-hidden="true" ></i>
+            </button> Education
+        </div>
+        <p><b>Engineering Immersion Program</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;06/2011 - 01/2014 Thinkful, chicago, IL</p>
+        <p>Project-focused intensive program with emphasis on Mongo, Express, React, and JavaScript(MERN) technical stack.</p>
+        <ul>
+            <li>Developed a full-stack web application, "RenewU", using React that allows users to explore various aspects of medication. User's progress is stored on a backend created using Node and MongoDB.</li>
+            <li>Developed a language learning app, "Foodie Phonetics" using spaced repetition and a linked list data structure.React was used to create the front and components while Node and Mongo were used to create a backend that stores user data.</li>
+            <li>Developed a concierge app, "Pley", for individuals looking for currated suggestions when visiting a new place. React was used to develop the front end which includes the real-time chat, drag and drop and variety of advanced features. The backend,
+                built using Node, Express, and Mongo, takes advantages of well-developed RESTful API, Geospatial searching and user authentication with JWT.</li>
+        </ul>
+        </br>
+        <p><b>BA, English</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;09/2001 - 09/2005 University of California, Los Angles</p>
+        </br>
+        </br>
+        </br>
+        </br>
+
+
+
+    </div>
+
+</body>
+
+</html>

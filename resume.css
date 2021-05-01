@@ -1,0 +1,29 @@
+/*.name {
+    text-align: center;
+    box-shadow: 2px;
+    color: black;
+    height: 70px;
+    width: 180px;
+    background: yellow;
+    position: fixed;
+}
+
+.right {
+    right: 150;
+}
+
+.left {
+    left: ;
+}*/
+
+.top {
+    background-color: gray;
+    height: 150px;
+    width: 1000px;
+}
+
+.imp {
+    border-radius: 50%;
+    position: absolute;
+    border: dotted yellow;
+}
