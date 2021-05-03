@@ -7,11 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
-    <title>Document</title>
+    <title>Resume</title>
 
     <style>
+        /*#menu-container {
+            position: absolute;
+            white-space: nowrap;
+            overflow: hidden;
+        }*/
+        /* #menu-container {
+            min-width: 1000px;
+        }*/
+        
         body {
             margin: 15px 250px 15px 250px;
+            position: relative;
         }
         
         .head {
@@ -27,7 +37,25 @@
             border-radius: 50%;
             border: 5px dotted yellow;
             position: absolute;
-            transform: translate(155%, 25%);
+            transform: translate(150%, 30%);
+            object-position: center;
+        }
+        
+        .button {
+            /*margin: 0;*/
+            position: absolute;
+            transform: translate(45%, 310%);
+            /* -ms-transform: translateY(-50%);
+            transform: translateY(-50%);*/
+            color: rgb(46, 44, 44);
+            background-color: rgb(247, 168, 23);
+            font-size: 450%;
+            height: 90px;
+            /*width: 600px;*/
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 10px black;
+            text-align: center;
+            /*transform: translate(100%, -25%);*/
         }
         
         .bar1 {
@@ -40,24 +68,6 @@
             background-color: rgb(80, 79, 79);
             height: 60px;
             /*width: 1750px;*/
-        }
-        
-        .button {
-            /*margin: 0;*/
-            position: absolute;
-            top: 40%;
-            left: 33%;
-            /* -ms-transform: translateY(-50%);
-            transform: translateY(-50%);*/
-            color: rgb(46, 44, 44);
-            background-color: rgb(247, 168, 23);
-            font-size: 450%;
-            height: 90px;
-            /*width: 600px;*/
-            border-radius: 10px 10px 10px 10px;
-            box-shadow: 10px black;
-            text-align: center;
-            /*transform: translate(100%, -25%);*/
         }
         
         .line1 {
@@ -186,13 +196,20 @@
 
 </head>
 
+<!--<div>
+    <div class="button">&emsp;NABHEETH&emsp;></div>
+    <div><img src="https://i.pinimg.com/236x/42/1c/28/421c28b1f5dc578a4a54ebda8c046902.jpg" alt=""></div>
+</div>-->
 
 <body>
+
     <div class="head">
-        <img src="https://i.pinimg.com/236x/42/1c/28/421c28b1f5dc578a4a54ebda8c046902.jpg">
+
+        <div><img src="https://i.pinimg.com/236x/42/1c/28/421c28b1f5dc578a4a54ebda8c046902.jpg"></div>
+        <div class="button">&emsp;NABHEETH&emsp;</div>
     </div>
     <div class="bar1">
-        <div class="button">&emsp;NABHEETH&emsp;</div>
+        <!--    <div class="button">&emsp;NABHEETH&emsp;</div>-->
     </div>
     <div class="line1"></div>
     <div class="bar2"></div>
@@ -286,7 +303,7 @@
 
 
     </div>
-
+    </div>
 </body>
 
 </html>
